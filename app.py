@@ -5,7 +5,8 @@ import os
 
 def create_app():
     app = Flask(__name__)
-    CORS(app, origins=["http://localhost:8080"])  # Frontend port
+    CORS(app, origins=["http://localhost:8080"])
+    CORS(app, origins=["https://summarizer-frontend-divyashree-rs-projects.vercel.app/"])  # Frontend port
 
     # Configuration
     app.config.update(
